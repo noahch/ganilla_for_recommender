@@ -509,7 +509,7 @@ class BasicBlock_Ganilla(nn.Module):
 
 
 class PyramidFeatures_v3(nn.Module):
-    def __init__(self, C3_size, C4_size, C5_size, feature_size=128):
+    def __init__(self, C3_size, C4_size, C5_size, feature_size=32):
         super(PyramidFeatures_v3, self).__init__()
 
         # upsample C5 to get P5 from the FPN paper

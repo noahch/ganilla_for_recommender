@@ -1,5 +1,8 @@
 # ganilla_for_recommender
 
+Experiments by noah and yves
+
+
 THIS CODE IS FROM https://github.com/giddyyupp/ganilla/
 Modified for a recommender system
 
