@@ -26,6 +26,7 @@ class BaseOptions():
         parser.add_argument('--netG', type=str, default='resnet_fpn', help='selects model to use for netG [resnet_fpn | ablation_model1 | ablation_model2 | resnet_9blocks | resnet_6blocks]')
         parser.add_argument('--n_layers_D', type=int, default=3, help='only used if netD==n_layers')
         parser.add_argument('--fpn_weights', type=list, default=[1.0, 1.0, 1.0, 1.0], help='weights for each fpn layer from C5 to C2')
+        # parser.add_argument('--fpn_weights', type=list, default=[1,0.2,0.1,0.05], help='weights for each fpn layer from C5 to C2')
         parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
         parser.add_argument('--dataset_mode', type=str, default='unaligned', help='chooses how datasets are loaded. [unaligned | aligned | single]')
         parser.add_argument('--model', type=str, default='cycle_gan', help='chooses which model to use. cycle_gan, pix2pix, test')
