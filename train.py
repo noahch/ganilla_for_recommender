@@ -24,7 +24,8 @@ if __name__ == '__main__':
         epoch_iter = 0
 
         for i, data in enumerate(dataset):
-            print(i)
+            if i % 10 == 0:
+                print(str(i) + ' % of epoch')
             iter_start_time = time.time()
             if total_steps % opt.print_freq == 0:
                 t_data = iter_start_time - iter_data_time
